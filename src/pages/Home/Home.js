@@ -6,7 +6,7 @@ import Show from '../../components/Show/Show';
 const Home = (props) => {
 
     const showList = props.shows.map((show) => {
-        return <Show show={show} />
+        return <Show show={show} setShow = {props.setShow}/>
     })
      
         return ( 

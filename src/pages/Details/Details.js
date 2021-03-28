@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import './Details.css';
 
+
 class Details extends Component {
     state = {  }
 
 
-    render() { 
-        // const { show , cast , season} = this.props.show;
-        return ( 
+    render() {
+        return (
+          
           <div className="details-cnt">
-             
                 <button className="back" onClick={()=> this.props.setShow(null)}>Back</button>
                 <div className='details'>
                     <h1 className="detailName">{this.props.show.name}</h1>
@@ -35,6 +35,7 @@ class Details extends Component {
                         </div>      
                 </div>
             </div>
+           
          );
     }
 }
