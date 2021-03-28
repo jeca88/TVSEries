@@ -1,0 +1,34 @@
+.dropdown {
+    width: 40%;
+    position: relative;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-shadow: 2px 4px 4px #888888;
+    border: none;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.dropdown-content {
+    height: 250px;
+    background-image: linear-gradient(rgb(201, 193, 193), rgb(124, 124, 110));
+    position: absolute;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+
+.dropdown-content p {
+    border-bottom: 1px solid black;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.dropdown-content p:hover {
+    cursor: pointer;
+    background-color: rgb(46, 44, 48); 
+    color: white;
+}
