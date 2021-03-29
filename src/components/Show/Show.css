@@ -1,6 +1,9 @@
+.show {
+   width: 30%; 
+   text-align: center;
+}
 
 .img-div {
-    width: 100%;
     margin: 10px;
     display: flex;
     flex-direction: column;
