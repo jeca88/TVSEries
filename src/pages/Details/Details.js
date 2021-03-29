@@ -1,20 +1,33 @@
 import React, { Component } from 'react';
 import './Details.css';
+import Cast from '../../components/Cast/Cast'
 
 
 class Details extends Component {
-    state = {  }
+    state = {}
 
 
     render() {
         return (
-          
-          <div className="details-cnt">
-                <button className="back" onClick={()=> this.props.setShow(null)}>Back</button>
+
+            <div className="details-cnt">
+                <button className="back" onClick={() => this.props.setShow(null)}>Back</button>
                 <div className='details'>
-                    <h1 className="detailName">{this.props.show.name}</h1>
+                    <img className="detailImage" src={this.props.show.image} />
+                    <div className="detailName">
+                        <h1 className="name">{this.props.show.name}</h1>
+                        <div className="genre">
+                            {this.props.show.genres.map(elem => {
+                                return <p>{elem}</p>
+                            })}
+                        </div>
+                        <p>{this.props.show.summary}</p>
+                    </div>
+
+                    < Cast show={this.props.show} />
+                    {/* 
                         <div className="detailMain">
-                            <img className="detailImage" src={this.props.show.image}/>
+                            
                             <div>
                                 <div className="seasonsCrew">
                                     <h3>Season ({this.props.show.numOfSeasons})</h3>
@@ -31,13 +44,13 @@ class Details extends Component {
                         </div>
                         <div className="detailSummary">
                             <h3>Show Details</h3>
-                             <p>{this.props.show.summary}</p>
-                        </div>      
+                            
+                        </div>       */}
                 </div>
             </div>
-           
-         );
+
+        );
     }
 }
- 
+
 export default Details;

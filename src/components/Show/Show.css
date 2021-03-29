@@ -9,6 +9,8 @@
     font-size: 20px;
     padding-top: 10px;
     color: #121212;
+    position: relative;
+   
 }
 
 .img-div:hover {
@@ -21,5 +23,20 @@
 
 .img {
     width: 80%;
+    
   
 }
+
+.rating {
+    border: 1px solid rgb(0, 174, 255);
+    border-radius: 50%;
+    background-color: rgb(0, 174, 255);
+    color: white;
+    padding: 5px;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    font-size: 18px;
+
+}
+

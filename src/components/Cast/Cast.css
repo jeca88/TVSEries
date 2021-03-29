@@ -1,0 +1,30 @@
+.cast {
+    width: 100%;
+    
+}
+
+.castCrew-cnt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.grid {
+    
+}
+
+.castCrew { 
+    width: 150px;
+    position: relative;  
+}
+
+.castCrew img {
+    width: 100%;
+    height: 80%;
+}
+
+.castCrew p {
+    position: absolute;
+    bottom: 50px;
+    color: white;
+}
