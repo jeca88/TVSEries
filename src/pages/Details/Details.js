@@ -21,34 +21,12 @@ class Details extends Component {
                                 return <p>{elem}</p>
                             })}
                         </div>
-                        <p>{this.props.show.summary}</p>
+                        <p dangerouslySetInnerHTML={{ __html: `${this.props.show.summary}` }}></p>
                     </div>
-
+                    
                     < Cast show={this.props.show} />
-                    {/* 
-                        <div className="detailMain">
-                            
-                            <div>
-                                <div className="seasonsCrew">
-                                    <h3>Season ({this.props.show.numOfSeasons})</h3>
-                                </div>
-                                <div className="crewList">
-                                    <h3>Cast</h3>
-                                    <ul> 
-                                        {this.props.show.cast.map(elem => {
-                                           return <li>{elem}</li>
-                                        })}
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="detailSummary">
-                            <h3>Show Details</h3>
-                            
-                        </div>       */}
                 </div>
             </div>
-
         );
     }
 }

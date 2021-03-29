@@ -1,30 +1,91 @@
 .cast {
     width: 100%;
-    
+    margin-top: 30px;   
 }
 
-.castCrew-cnt {
+.cast h3 {
+    font-size: 30px;
+    text-align: left;
+    font-style: italic;
+}
+
+.activeGrid {
+    display: flex;
+    width: 90%;
+    margin:  auto;
+    align-items: center;
+    border: 1px solid black;
+    padding: 20px;  
+}
+
+
+
+.castCrew-cnt { 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-.grid {
+    width: 100%;
     
 }
 
-.castCrew { 
-    width: 150px;
-    position: relative;  
+.castCrew {
+    width: 230px;
+    position: relative; 
+    margin-bottom: 10px; 
 }
 
 .castCrew img {
-    width: 100%;
-    height: 80%;
+    width: 80%;
+    height: 90%;
 }
 
 .castCrew p {
     position: absolute;
-    bottom: 50px;
+    bottom: 10%;
+    left: 18%;
     color: white;
 }
+
+.activeGrid {
+    display: flex;
+    width: 100%;
+    margin:  auto;
+    align-items: center;
+    border: 1px solid rgb(121, 117, 117);
+    padding: 10px;  
+   
+}
+
+.activeGrid img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 0 15px;
+}
+
+.activeGrid p {
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+    left: 15%;
+}
+
+.toggle-grid {
+    width: 80px;
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(rgb(82, 10, 40), rgb(243, 144, 193));
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.toggle-grid:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-image: linear-gradient(rgb(51, 9, 26), rgb(143, 48, 95));
+    border-radius: 20px;
+   
+}
+

@@ -10,7 +10,7 @@ class Header extends Component {
                 <div className="header-cnt">
                     <span>BIT SHOW</span>
                     < Search onSearch={this.props.onSearch} searchedShows={this.props.searchedShows}
-                        setShow={this.props.setShow} />
+                        setShow={this.props.setShow}/>
                 </div>
             </div>
         );

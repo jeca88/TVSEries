@@ -11,7 +11,8 @@ class App extends React.Component {
     searchedShows: [],
     showId: null,
     seriesDetail: { cast: [], genres: [] },
-    items: []
+    items: [],
+    showSuggestion: []
 
   }
 
@@ -19,17 +20,13 @@ class App extends React.Component {
     this.setState({
       searchValue: searchValue,
     })
+    
   }
 
   setShow = (id) => {
     this.setState({ showId: id });
     this.getShow(id);
   }
-
-
-
-
-
 
   getShow = (id) => {
     const showURL = "https://api.tvmaze.com/shows/" + id;
@@ -62,7 +59,6 @@ class App extends React.Component {
   componentDidMount() {
     if (!this.state.shows.length) {
       const url = "https://api.tvmaze.com/shows";
-
       fetch(url)
         .then(res => res.json())
         .then(
@@ -70,9 +66,6 @@ class App extends React.Component {
         );
     }
   }
-
-
-
 
   componentDidUpdate() {
     fetch('http://api.tvmaze.com/search/shows?q=' + this.state.searchValue)
@@ -91,9 +84,7 @@ class App extends React.Component {
         {!this.state.showId ?
           (< Home shows={this.state.shows} onSearch={this.onSearch}
             searchedShows={this.state.searchedShows}
-            setShow={this.setShow}
-
-          />) :
+            setShow={this.setShow}/>) :
           (< Details setShow={this.setShow} show={this.state.seriesDetail}
             showId={this.state.showId} />)}
       </div>

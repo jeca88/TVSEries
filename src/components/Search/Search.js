@@ -12,7 +12,7 @@ class Search extends Component {
         return (
             <div className="dropdown">
                 <input className="search" value={this.state.searchValue} onChange={this.onSearch}
-                    onKeyDown={() => this.props.onSearch(this.state.searchValue)} type="text" placeholder="Search.." />
+                 onKeyDown={() => this.props.onSearch(this.state.searchValue)} type="text" placeholder="Search.." />
                 <div id="myDropdown" className="dropdown-content">
                     {this.props.searchedShows.map(show => {
                         if (this.state.searchValue !== "") {
