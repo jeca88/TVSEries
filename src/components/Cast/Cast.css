@@ -91,7 +91,7 @@
 .toggle-grid:hover {
     cursor: pointer;
     transform: scale(1.1);
-    background-image: linear-gradient(rgb(51, 9, 26), rgb(143, 48, 95));
+    background-image: linear-gradient(rgb(59, 30, 189), rgb(57, 164, 235));
     border-radius: 20px;
    
 }
