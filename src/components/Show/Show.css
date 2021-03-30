@@ -3,13 +3,13 @@
    min-width: 200px;
    text-align: center;
    border: 1px solid rgb(0, 174, 255);
-   margin-bottom: 10px;
+   margin-bottom: 40px;
    border-radius: 15px;
    box-shadow: 2px 4px 4px #888888;
 }
 
 .active {
-    background-color: rgb(204, 240, 132);
+    background-color: rgb(177, 211, 221);
 }
 
 .img-div {
@@ -25,10 +25,9 @@
    
 }
 
-.img-div:hover {
+.show:hover {
     cursor: pointer;
     transform: scale(1.1);
-    background-color: rgb(232, 231, 233); 
     border-radius: 15px;
     font-size: 26px;
 }

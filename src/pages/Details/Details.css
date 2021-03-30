@@ -1,7 +1,6 @@
 .details-cnt {
     width: 100%;
-   
-    background-color: thistle;
+    background-image: linear-gradient(rgb(238, 243, 245), rgb(118, 127, 129));
 }
 
 .details {
@@ -29,6 +28,8 @@
 .detailName {
     text-align: center;
     width: 50%;
+    font-style: italic;
+    
 }
 
 .detailMain {
@@ -54,15 +55,16 @@
     border: none;
     padding: 10px 5px;
     margin: 15px;
-    background-color: rgb(218, 140, 207);
+    background-color: rgb(107, 157, 223);
     color: white;
+    text-transform: uppercase;
 
 }
 
 .back:hover {
     cursor: pointer;
     transform: scale(1.1);
-    background-color: rgb(212, 58, 212);   
+    background-color: rgb(58, 94, 212);   
 }
 
 .seasonsCrew {

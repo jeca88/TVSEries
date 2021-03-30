@@ -3,6 +3,7 @@ import './App.css';
 import Home from './pages/Home/Home';
 import Details from './pages/Details/Details';
 import React from 'react';
+import Footer from './components/Footer/Footer';
 
 class App extends React.Component {
   state = {
@@ -76,6 +77,7 @@ class App extends React.Component {
             setShow={this.setShow} filteredShows={this.state.filteredShows} />) :
           (< Details setShow={this.setShow} show={this.state.seriesDetail}
             showId={this.state.showId} />)}
+            < Footer />
       </div>
     );
   }

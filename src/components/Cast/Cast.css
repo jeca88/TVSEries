@@ -26,24 +26,27 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    
+        
 }
 
 .castCrew {
-    width: 230px;
+    width: 210px;
+    height: 250px;
     position: relative; 
-    margin-bottom: 10px; 
+    margin-bottom: 20px; 
+    border: 1px solid rgb(16, 78, 136);
+    
 }
 
 .castCrew img {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
 .castCrew p {
     position: absolute;
-    bottom: 15%;
+    bottom: 8%;
     left: 18%;
     color: white;
 }
@@ -79,7 +82,7 @@
     border-radius: 20px;
     outline: none;
     border: none;
-    background-image: linear-gradient(rgb(82, 10, 40), rgb(243, 144, 193));
+    background-image: linear-gradient(rgb(42, 20, 124), rgb(46, 143, 235));
     text-transform: uppercase;
     font-weight: 700;
     margin-top: 15px;
