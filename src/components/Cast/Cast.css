@@ -1,6 +1,7 @@
 .cast {
     width: 100%;
     margin-top: 30px;   
+    border-top: 1px solid rgb(145, 141, 141);
 }
 
 .cast h3 {
@@ -36,12 +37,13 @@
 
 .castCrew img {
     width: 80%;
-    height: 90%;
+    height: 80%;
+    object-fit: cover;
 }
 
 .castCrew p {
     position: absolute;
-    bottom: 10%;
+    bottom: 15%;
     left: 18%;
     color: white;
 }
@@ -51,16 +53,17 @@
     width: 100%;
     margin:  auto;
     align-items: center;
-    border: 1px solid rgb(121, 117, 117);
+    border: 1px solid rgb(175, 171, 171);
     padding: 10px;  
    
 }
 
 .activeGrid img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     padding: 0 15px;
+    object-fit: cover;
 }
 
 .activeGrid p {
@@ -79,6 +82,7 @@
     background-image: linear-gradient(rgb(82, 10, 40), rgb(243, 144, 193));
     text-transform: uppercase;
     font-weight: 700;
+    margin-top: 15px;
 }
 
 .toggle-grid:hover {

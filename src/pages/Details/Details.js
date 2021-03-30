@@ -9,7 +9,6 @@ class Details extends Component {
 
     render() {
         return (
-
             <div className="details-cnt">
                 <button className="back" onClick={() => this.props.setShow(null)}>Back</button>
                 <div className='details'>
@@ -23,7 +22,7 @@ class Details extends Component {
                         </div>
                         <p dangerouslySetInnerHTML={{ __html: `${this.props.show.summary}` }}></p>
                     </div>
-                    
+
                     < Cast show={this.props.show} />
                 </div>
             </div>

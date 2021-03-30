@@ -9,8 +9,8 @@ class Header extends Component {
             <div className="header">
                 <div className="header-cnt">
                     <span>BIT SHOW</span>
-                    < Search onSearch={this.props.onSearch} searchedShows={this.props.searchedShows}
-                        setShow={this.props.setShow}/>
+                    < Search onSearch={this.props.onSearch}
+                        setShow={this.props.setShow} />
                 </div>
             </div>
         );

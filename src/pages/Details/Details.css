@@ -38,6 +38,7 @@
 
 .detailImage {
     width: 40%;
+    min-width: 250px;
     margin-right: 40px;
 }
 
@@ -70,3 +71,15 @@
 .crewList {
     text-align: left;
 }
+
+
+@media only screen and (max-width: 950px) {
+    .details {
+     justify-content: center;
+     display: flex;
+    }
+
+    .detailName {
+        width: 100%;
+       }
+  }
