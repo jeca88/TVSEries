@@ -6,20 +6,22 @@ class Cast extends Component {
 
     changeGrid = () => {
         this.setState({grid: !this.state.grid})
+        localStorage.setItem('grid', this.state.grid);
       }
 
 
     render() {
+        const grid = localStorage.getItem('grid') === 'true';
         return (
             <div className="cast">
                 <button className="toggle-grid" 
-                onClick={this.changeGrid}>{this.state.grid? "grid": "list"}
+                onClick={this.changeGrid}>{grid? "grid": "list"}
                 </button>
                 <h3>Cast</h3>
                 <div className="castCrew-cnt">
                     {this.props.show.cast.map(elem => {
                         return (
-                            <div className={` ${this.state.grid ? "activeGrid" : "castCrew"}`}>
+                            <div className={` ${grid ? "activeGrid" : "castCrew"}`}>
                                 <img className='castPic' src={elem.person.image.original} />
                                 <p>{elem.person.name}</p>
                             </div>
